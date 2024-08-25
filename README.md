@@ -3,6 +3,8 @@ Roblox drawing library inspired by the well known gamesense menu, strictly for e
 
 Example:
 ```luau
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/DevEclipse1/gamezens-library/main/source.lua"))()
+
 local window = lib.create_window("gamesense",Enum.KeyCode.Insert) -- function create_window(theme,open_keycode)
 local tab = window.create_tab("rbxassetid://10464044451") -- function create_tab(tab_image)
 local tab2 = window.create_tab("rbxassetid://10464234466")
