@@ -13,7 +13,7 @@ local sector = tab.create_sector("Mute lib") -- function tab.create_sector(secto
 
 sector.error("Error text") -- function sector.error(text); function error.set(new_text)
 sector.info("Information text") -- function sector.info(text)
-local warning = sector.warning("Warning text"	); warning.set("Warning (overriden) text")  -- function sector.warning(text);  function warning.set(new_text)
+local warning = sector.warning("Warning text"); warning.set("Warning (overriden) text")  -- function sector.warning(text);  function warning.set(new_text)
 sector.text("Text") -- function text(); function text.set(new_text)
 
 local textbox = sector.textbox("Textbox","Default text",function(text) -- function sector.textbox(placeholder,default_text,callback(text))
