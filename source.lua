@@ -723,6 +723,8 @@ lib.create_window = function(theme, menu_key)
 					else
 						Bg.BackgroundColor3 = themes[theme]["ToggleUnchecked"]
 					end
+					
+					callback(value)
 				end
 				
 				toggle.set_text = function(_text)
