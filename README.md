@@ -5,11 +5,11 @@ Example:
 ```luau
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/DevEclipse1/gamezens-library/main/source.lua"))()
 
-local window = lib.create_window("gamesense",Enum.KeyCode.Insert) -- function create_window(theme,open_keycode)
-local tab = window.create_tab("rbxassetid://10464044451") -- function create_tab(tab_image)
-local tab2 = window.create_tab("rbxassetid://10464234466")
+local window = lib.create_window("gamesense",Enum.KeyCode.Insert) -- function lib.create_window(theme,open_keycode)
+local tab = window.create_tab("rbxassetid://10464044451") -- function window.create_tab(tab_image)
+local tab2 = window.create_tab("rbxassetid://10464234466") -- function window.create_tab(tab_image)
 
-local sector = tab.create_sector("Mute lib") -- function create_sector(sector_header_text)
+local sector = tab.create_sector("Mute lib") -- function tab.create_sector(sector_header_text)
 
 sector.error("Error text") -- function sector.error(text); function error.set(new_text)
 sector.info("Information text") -- function sector.info(text)
