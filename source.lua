@@ -820,7 +820,7 @@ lib.create_window = function(theme, menu_key)
 						end
 
 						local abs_pos = Colorpicker.AbsolutePosition
-						ColorPicker.Position = UDim2.new(0, abs_pos.X - Sector.AbsolutePosition.X, 0, abs_pos.Y - Sector.AbsolutePosition.Y + Colorpicker.Size.Y.Offset + 16)
+						ColorPicker.Position = UDim2.new(0, abs_pos.X - Sector.AbsolutePosition.X - 120, 0, abs_pos.Y - Sector.AbsolutePosition.Y + Colorpicker.Size.Y.Offset + 16)
 						ColorPicker.Visible = not ColorPicker.Visible
 					end)
 
